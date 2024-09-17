@@ -1,0 +1,24 @@
+<html>
+    <head>CALCI</head>
+    <body>
+        <input id="first"/>
+        <input id="Second"/>
+        <br/>
+        <button id="btn">ADD</button>
+        <p id="result">  </p>
+    </body>
+    <script>
+        document.getElementById("btn").onclick=twoNums;
+
+        function twoNums()
+        {
+            let a = document.getElementById("first").value;
+            let b = document.getElementById("Second").value;
+
+            let temp = parseInt(a)+parseInt(b);
+
+            document.getElementById("result").innerHTML=temp;
+        }
+    </script>
+
+</html>
